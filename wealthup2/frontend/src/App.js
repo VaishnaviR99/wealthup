@@ -28,7 +28,9 @@ function App() {
 
   const fetchGeneratedCode = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/codes");
+      const response = await fetch(
+        "https://wealthupbackend.onrender.com/api/codes"
+      );
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
@@ -45,13 +47,16 @@ function App() {
       setLoading(true);
       setOutput("Loading...");
 
-      const response = await fetch("http://localhost:5000/api/codes/use", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ code }),
-      });
+      const response = await fetch(
+        "https://wealthupbackend.onrender.com/api/codes/use",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ code }),
+        }
+      );
 
       if (response.ok) {
         const result = await response.json();
