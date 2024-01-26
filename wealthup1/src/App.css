@@ -1,0 +1,116 @@
+body{
+
+font-family: 'Poppins', sans-serif;
+color: white;
+
+}
+
+.App {
+
+height: 94vw;
+ background-image: linear-gradient(to right, rgb(10,87,131),rgb(21,146,149));
+ 
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header h1{
+font-size: 3em;
+}
+.header p{
+  
+  align-self: center;
+  font-size: medium;
+  font-weight: 10;
+  margin-top: -30px;
+  
+}
+.getstarted{
+width: 13%;
+padding: 10px;
+margin-top: 5px;
+font-size: larger;
+font-weight: bold;
+color: white;
+background-color: rgb(251,115,6);
+border-radius: 40px;
+border-color:transparent;
+box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.middlecon{
+  display: flex;
+ justify-content: center;
+}
+.tickcon{
+  display: flex;
+  align-items: center;
+}
+.tickcon p{
+  font-size: 20px;
+  margin-left: 10px;
+}
+.mob{
+  margin-right: -120px;
+}
+
+.footer {
+  position: absolute;
+  margin-top: 300px;
+}
+
+.vector {
+  
+   position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 100vh;
+  object-fit: cover; 
+ 
+  
+}
+
+.content {
+  position: relative;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ margin-left: 300px;
+ 
+ 
+}
+.content h1{
+  margin-top: -200px;
+}
+.registeration{
+ margin-top: -150px;
+}
+
+.note{
+  display: flex;
+  flex-direction: row;
+  gap:190px;
+   margin-top: -170px; 
+}
+
+.getstartedd{
+  width:25%;
+padding: 10px;
+margin-top: 5px;
+font-size: larger;
+font-weight: bold;
+color: white;
+background-color: rgb(251,115,6);
+border-radius: 40px;
+border-color:transparent;
+box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+
+
+
