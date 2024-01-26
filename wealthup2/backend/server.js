@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use("/api/codes", codeRoutes);
 app.use((req, res) => {
-  res.status(404).send("Route not found");
+  res.status(404).send("welcome");
 });
 
 app.listen(PORT, async () => {
