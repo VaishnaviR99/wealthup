@@ -29,7 +29,7 @@ function App() {
   const fetchGeneratedCode = async () => {
     try {
       const response = await fetch(
-        "https://wealthupbackend.onrender.com/api/codes"
+        "https://wealthupback.onrender.com/api/codes"
       );
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -48,7 +48,7 @@ function App() {
       setOutput("Loading...");
 
       const response = await fetch(
-        "https://wealthupbackend.onrender.com/api/codes/use",
+        "https://wealthupback.onrender.com/api/codes/use",
         {
           method: "POST",
           headers: {
